@@ -1,0 +1,24 @@
+#separator:tab
+#html:false
+#tags column:3
+What does Bash stand for?	Bourne Again SHell — a pun on the older Bourne shell (sh)	linux missing-semester
+What is a shell?	A program that reads your typed commands and runs other programs; a text interface to the OS	linux missing-semester
+How does the shell find a program like ls?	It searches the directories listed in the PATH environment variable, in order	linux missing-semester
+How do you see where a command lives?	which <command>, e.g. which ls -> /usr/bin/ls	linux missing-semester
+What does pwd do?	Prints the current (present) working directory	linux missing-semester
+What do . and .. mean in a path?	. = the current directory, .. = the parent directory	linux missing-semester
+Absolute vs relative path?	Absolute starts at / (e.g. /home/ilyass); relative starts from where you are (e.g. code/learning-log)	linux missing-semester
+What does ~ mean?	Your home directory, e.g. /home/ilyass	linux missing-semester
+cp vs mv?	cp copies source to target; mv moves or renames (the original is gone)	linux missing-semester
+What does > do?	Redirects a program's output into a file, overwriting it	linux missing-semester
+What does >> do?	Redirects output into a file, appending to the end	linux missing-semester
+What does < do?	Feeds a file into a program as its input, e.g. sort < names.txt	linux missing-semester
+What does the pipe | do?	Sends one program's output straight into the next program's input, e.g. ls | wc -l	linux missing-semester
+What does sudo do?	Runs one command as the superuser (root)	linux missing-semester
+Prompt $ vs #?	$ = regular user, # = root	linux missing-semester
+File permissions r, w, x?	r = read contents, w = modify, x = run as a program	linux missing-semester
+Directory permissions r, w, x?	r = list names, w = create/delete/rename entries, x = enter/traverse it (cd in, reach files by path)	linux missing-semester
+How to read -rwxr-x---?	First char = type (- file, d dir); then owner rwx, group r-x, others ---	linux missing-semester
+Where is a command's full manual?	man <command>; quick summary: <command> --help	linux missing-semester
+What is /sys?	A virtual filesystem the kernel generates to expose devices and kernel settings	linux missing-semester
+Why does sudo echo 3 > /sys/... fail?	The redirect is done by your (non-root) shell before sudo runs; use: echo 3 | sudo tee /sys/...	linux missing-semester
