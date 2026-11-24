@@ -1,4 +1,4 @@
-# Missing Semester 01 — Course overview + the shell (2026-11-24)
+# Missing Semester 01 — Course overview + the shell (2026-11-23)
 
 ## My notes (written from memory)
 

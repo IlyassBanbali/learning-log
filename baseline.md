@@ -1,4 +1,4 @@
-# Baseline (placement test, 2026-11-24)
+# Baseline (placement test, 2026-11-23)
 
 Self-assessed before Phase 1: I could not answer the Phase 0 placement questions
 (Linux, networking, Python internals, Git, SQL, databases, cloud, containers, data engineering).
