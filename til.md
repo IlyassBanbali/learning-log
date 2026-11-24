@@ -8,3 +8,4 @@
 - 2026-11-23: Missing Semester 01 — the shell finds programs via PATH; > overwrites, >> appends, < feeds input, | chains programs.
 - 2026-11-23: Missing Semester 01 exercises done — shebang + chmod +x to run a script; ./script runs it via the shebang, sh script runs it via sh directly.
 - 2026-11-23: Valid Anagram — count up for s, down for t, then all(v == 0); summing counts is not enough because +1/-1 on different letters cancel. Return the boolean directly, never if cond: return True.
+- 2026-11-23: Group Anagrams — key each word by its letter counts as a 26-tuple (lists/dicts are mutable, so unhashable; tuples work) and group in a defaultdict(list). O(n·k) time, O(n·k) space. Presence bits are not enough ("aab" vs "abb"). Sorted-string key also works at O(n·k log k). Key ≠ hash: equal keys share a group; a collision is unequal keys landing in the same slot, which the dict resolves with ==. (Solved with hints 2–3; cold rewrite due at the Sunday check-in.)
